@@ -21,7 +21,18 @@ At the very beginning, you should prepare your theme for further development. In
 ## Development: BrowserSync + Livereload + watchers
 
 To start development, just type in the command line `npm start`
-It will run all code compilators and linters.
+It will run SCSS and JS code compilators and linters.
+
+## Checking PHP code quality
+
+Install all PHP dependencies by typing in terminal `composer install` in this plugin directory
+
+To lint your PHP code, type in the console (in this directory) `composer run-script lint`
+
+To autofix your PHP code, type in the console (in this directory) `composer run-script lint:fix`
+
+You can also configure your IDE with this documentation:
+* https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html#installing-configuring-php-cs-fixer
 
 ## Building bundle
 
@@ -39,12 +50,3 @@ Compiled assets are not included in the repository, so the website won't be disp
 
 1. Run `npm install`
 2. Run `npm run build`
-
-# Upcoming
-1. Add PHP CS 
-2. Improve checking files inside an IDE
-3. Add `.editorconfig`
-4. Configure BUDDY for automatic deployment + buddy YAML
-5. Set flow of merging changes to the master / PR / etc.
-6. Validate everything locally before commit push
-7. Create a separate repository with a starter for the full site editing
