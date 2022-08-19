@@ -8,7 +8,7 @@ class Menu {
 	public function __construct() {
 		 add_action( 'init', [ $this, 'init_menus' ] );
 		add_action( 'init', [ $this, 'register_my_menu' ] );
-		add_action( 'init', [ $this, 'register_foot_menu' ] );
+		add_action( 'init', [ $this, 'register_footer_menu' ] );
 	}
 
 	/**
@@ -22,11 +22,5 @@ class Menu {
 	function register_my_menu() {
 		register_nav_menu( 'main-menu', __( 'Main Menu', 'dp' ) );
 	}
-
-	function register_footer_menu() {
-		register_foot_menu( 'footer-menu', __( 'Footer Menu', 'dp' ) );
-	}
-
-
 }
 

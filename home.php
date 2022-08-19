@@ -7,7 +7,8 @@ $posts_args = [];
 while ( have_posts() ) {
 	the_post();
 	the_title();
-	the_footer();
+	the_content();
+	the_excerpt();
 
 	$thumbnail_url = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' )
 		? get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' )

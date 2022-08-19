@@ -2,9 +2,8 @@
 get_header();
 ?>
 
-	<h1> About us </h1>
-<?php
-the_content();
-?>
+<?php the_title(); ?>
+
+<?php get_template_part( 'template-parts/about-us-template', 'content' ); ?>
 <?php
 get_footer();
