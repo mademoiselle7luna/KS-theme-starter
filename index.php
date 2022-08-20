@@ -9,8 +9,8 @@ echo esc_html( get_template_part( 'template-parts/pagination', 'infinite-scroll'
 ?>
 
 <?php
-if (have_posts()) {
-	echo("Hello, hello");
+if ( have_posts() ) {
+	echo( 'Hello, hello' );
 } else {
 	the_content();
 }

@@ -3,7 +3,7 @@ get_header();
 ?>
 	<div>
 		<?php
-		while (have_posts()) {
+		while ( have_posts() ) {
 			the_post();
 			?>
 			<h1>
@@ -11,7 +11,7 @@ get_header();
 			</h1>
 			<div>
 
-				<?php echo wp_get_attachment_image( get_post_thumbnail_id(), $size = 'large' ); ?>
+				<?php echo wp_get_attachment_image( get_post_thumbnail_id(), $size = 'thumbnail' ); ?>
 			</div>
 			<?php
 			echo esc_html( get_template_part( 'template-parts/metabox-details' ) );
