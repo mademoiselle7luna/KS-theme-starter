@@ -14,9 +14,12 @@ if ( have_posts() ) :
 		</h1>
 
 		<?php
-		the_content();
 		the_excerpt();
 		?>
+
+		<p>
+			<a href="<?php the_permalink(); ?>">Read more</a>
+		</p>
 
 		<p>
 			<?php the_date( 'Y-m-d h:i:sa' ); ?>
